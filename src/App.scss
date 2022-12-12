@@ -1,0 +1,95 @@
+/*
+  mobile first approach
+  For breakpoints the defaults 375px for small, 768px for medium and 1024px for large
+  screens (limiter can be 1280px) are enough.
+*/
+
+@media screen and (min-width : 375px) {
+  .c-AppContainer {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .c-CitiesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+  }
+
+  .c-CardItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 130px;
+    height: 210px;
+    position: relative;
+    background-color: #e1e1e1;
+
+    &--isHighlighted {
+      width: 270px !important;
+    }
+
+    .c-CardItemInfo {
+      position: absolute;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    h1, p, span {
+      color: #fff;
+      margin: 0;
+    }
+
+    span {
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: .6rem;
+    }
+
+    h1 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    p {
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .c-AppContainer {
+    max-width: 646px;
+  }
+ 
+  .c-CitiesContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+}
