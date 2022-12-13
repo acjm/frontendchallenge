@@ -42,7 +42,7 @@
     h2,
     p,
     span {
-      color: #fff;
+      color: $white;
     }
 
     span {
@@ -72,14 +72,14 @@
       width: 94px;
       height: 24px;
       background-color: transparent;
-      border: 1px solid #fff;
-      color: #fff;
+      border: 1px solid $white;
+      color: $white;
       cursor: pointer;
       font-weight: 400;
 
       &:hover {
-        background-color: #fff;
-        color: #000;
+        background-color: $white;
+        color: $black;
         font-weight: 500;
       }
     }

@@ -1,9 +1,26 @@
-#JS
+# TO USE THIS APP
 
-#CSS & IMAGES & ASSETS - I didn't get any asset folder or a figma template. - the focus wasn't 100% on dimensions but rather on the grid system to get closer to the image provided. - same goes with images, i get random images from internet, without teh filter provided
-_ we can work on that using css blendmode to get closer to the filter used _
+- git clone this repo on your local
+- npm install
+- npm start
+- npm test: to run tests
+- npm run storybook to check the stories
 
-#DATA - data/Cities.js array of objects to mock data - we can also create a node server that serve the same data, we can hit GET:"localhost/api/cities" to get the cities
+# Notes
 
-#COMPONENTS - cards:
-we can wrap cards with links to navigate
+# CSS & IMAGES & ASSETS
+
+- I didn't get any assets folder or a figma template.
+- the focus wasn't 100% on dimensions but rather on the grid system and make it closer to the image provided.
+- same goes with images, i got random images from internet, without the filter provided
+
+  _ we can work on that using css blendmode to get closer to the filter used _
+
+# DATA
+
+- data/Cities.js array of objects to mock data
+- we can also create a node server that serve the same data, we can hit GET:"localhost/api/cities" to get the cities
+
+# SEO
+
+We could use framework such as NexJs that can handle SSR for better SEO optimsation
