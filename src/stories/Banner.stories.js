@@ -1,11 +1,10 @@
-import { Banner } from "../components/Banner/Banner";
-// Banner stories
+import React from "react";
+import Banner from "../components/Banner/Banner";
+import "../components/Banner/Banner.scss";
+
 export default {
   title: "Components/Banner",
   component: Banner,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
 };
 
-export const Template = (args) => <Banner {...args} />;
+export const banner = (args) => <Banner />;

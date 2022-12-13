@@ -1,13 +1,7 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-}
-h2,
-p {
-  margin: 0;
-}
+@import "./styles/variables";
+@import "./styles/mixins";
 
+// hovering effect on images
 img {
   position: relative;
   transition: transform 0.5s;
@@ -22,24 +16,21 @@ img {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: $breakpoint-xs) {
   .c-AppContainer {
     max-width: 280px;
     margin: 50px auto 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include flexbox(column, center, center);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $breakpoint-sm) {
   .c-AppContainer {
     max-width: 550px;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $breakpoint-md) {
   .c-AppContainer {
     max-width: 1024px;
     margin: 0 auto;
